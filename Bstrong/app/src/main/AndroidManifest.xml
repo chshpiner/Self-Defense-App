@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.magshimot.malki.bstrong">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+
+        </activity>
+        <activity
+            android:name=".TrainingSkills_activity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+        <activity
+            android:name=".logo_activity"
+            android:label="@string/title_activity_logo_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".signin_activity"
+            android:label="@string/title_activity_signin_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".menue"
+            android:label="@string/title_activity_menue"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".signlogin"
+            android:label="@string/title_activity_signlogin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".sosset"
+            android:label="@string/title_activity_sosset"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".challeng2"></activity>
+    </application>
+
+</manifest>
